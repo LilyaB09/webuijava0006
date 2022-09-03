@@ -33,10 +33,9 @@
     </dependency>
 
       <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
+      <groupId>junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>S{junit.version}</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
