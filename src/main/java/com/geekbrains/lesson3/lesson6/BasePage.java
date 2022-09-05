@@ -19,4 +19,12 @@ public class BasePage {
         PageFactory.initElements(driver, this);
 
     }
+
+    public SwitchedToPurchase balletForChildren() {
+        return null;
+    }
+
+    public SwitchedToPurchase balletProductBuy() {
+        return null;
+    }
 }
