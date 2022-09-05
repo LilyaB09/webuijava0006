@@ -18,8 +18,6 @@ import java.time.Duration;
 
 public class PageObjectTest {
     WebDriver driver;
-    WebDriverWait webDriverWait;
-    Actions actions;
 
     @BeforeAll
     static void registerDriver() {
@@ -29,8 +27,6 @@ public class PageObjectTest {
     @BeforeEach
     void initDriver() {
         driver = new ChromeDriver();
-        webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        actions = new Actions(driver);
         driver.get("https://www.afisha.ru/izhevsk/cinema/");
     }
 
@@ -45,7 +41,7 @@ public class PageObjectTest {
         new MainPage(driver).clickSingInButton()
                 .login("prk.reklama@yandex.ru", "ASDFGHJ14z")
                 .mainMenu.hoverOverKidsButton()
-                .balletForChildren()
+                .balletProductBuy()
                 .checkTotalSumma("450");
     }
 
@@ -54,7 +50,4 @@ public class PageObjectTest {
         driver.quit();
     }
 
-
-    private class click {
-    }
 }
